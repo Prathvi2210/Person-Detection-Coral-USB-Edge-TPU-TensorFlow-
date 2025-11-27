@@ -15,5 +15,8 @@ SSD_MobileNet_V2_coco_quant_postprocess_edgetpu.tflite is the basic model with 9
 tf2_ssd_mobilenet_v2_coco17_ptq_edgetpu.tflite model is little better in terms of accuracy.
 These SSD based models achieved 60-70 fps on my hardware.
 
+A filter was applied to only detect person class to make prototype cleaner. No improvement in accuracy and performance yet.
 EfficientDet-Lite2 gave 6-7 fps
 EfficientDet-Lite0 gave 15-16 fps
+
+Patch option: Edit the tensorflow model so it only processes the person class thus improving the fps
